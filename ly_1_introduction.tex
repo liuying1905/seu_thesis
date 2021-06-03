@@ -1,0 +1,123 @@
+\chapter{可能用得上的模板}
+\label{introduction}
+
+\section{引用}
+
+深度强化学习\cite{Mnih2013PlayingAW,Ye2020MasteringCC}中，深度学习用于复杂环境的状态表征，有效抽取图像、仿真等高维连续状态空间的特征；强化学习通过与环境交互获得经验存入经验池，采样经验更新网络，学习最大化期望回报的目标策略\upcite{Silver2016MasteringTG,Li2017DeepRL}。
+
+引用文章使用 cite，引用文章内容使用 upcite，多个引用使用英文逗号间隔。
+
+\section{图片}
+
+\subsection{单张图片}
+
+\begin{figure*}
+	\centering
+	\includegraphics[width=0.7\textwidth]{img/ohana.png}
+	\caption{\label{fig:one_fig}单张图片}
+\end{figure*}
+
+单张图片如图\ref{fig:one_fig}所示。
+
+\subsection{多张图片}
+
+\begin{figure*}[htbp]
+	\centering
+	
+	\subfigure{
+		\begin{minipage}[t]{0.5\linewidth}
+			\centering
+			\includegraphics[width=2.8in]{img/ohana.png}\\
+			\vspace{0.02cm}
+			\includegraphics[width=2.8in]{img/ohana.png}\\
+			\vspace{0.02cm}
+		\end{minipage}%
+	}%
+	\subfigure{
+		\begin{minipage}[t]{0.5\linewidth}
+			\centering
+			\includegraphics[width=2.8in]{img/ohana.png}\\
+			\includegraphics[width=2.8in]{img/ohana.png}\\
+		\end{minipage}%
+	}%
+	
+	\centering
+	\caption{多张图片}
+	\label{fig:multi_fig}
+	
+\end{figure*}
+
+\newpage
+\section{表格}
+
+\subsection{表格一}
+表格一如表\ref{tab:tab_1}所示，表格中可以引用参考文献方便阅读。
+\begin{table}[htbp]
+	\caption{表格一}
+	\label{tab:tab_1}
+	\renewcommand\arraystretch{1.2}
+	%\Large
+	\begin{tabular}{L{2.5cm} L{3.2cm} L{4cm} L{4.5cm}}
+		%		{>{\normalsize}m{0.2\textwidth} <{\centering}m{0.2\textwidth}<{\centering}m{0.2\textwidth} <{\centering}m{0.3\textwidth}}
+		\hline
+		方法 	& 经验组成		& 经验池		& 保留优先级			\\
+		\hline
+		方法一\cite{Mnih2013PlayingAW} & 转移	& 先进先出	 & 时间顺序		\\	
+		方法二\cite{Karimpanal2018ExperienceRU} 	& 转移序列	& 先进先出	 & 时间顺序		\\	
+		\hline
+	\end{tabular}
+\end{table}
+
+\subsection{表格二}
+表格二如表\ref{tab:tab_2}所示。
+\begin{table*}[htbp]
+	\centering
+	\caption{\label{tab:tab_2}表格二}
+	\begin{tabular}
+		{C{3cm} C{1.2cm} C{1.5cm}  C{1.2cm} C{1.5cm}  C{1.2cm} C{1.5cm}}
+		\hline
+		\multirow{2}{*}{数据集}   &   \multicolumn{2}{c}{方法一} &   \multicolumn{2}{c}{方法二} &   \multicolumn{2}{c}{方法三}  \\
+		%		\cline{2-9}
+		&	指标1 & 指标2 &	指标1 & 指标2&	指标1 & 指标2	\\
+		\hline
+		数据集1	&	0.975	&	0.53	&	0.983	&	0.56	&	$\bm{1.000}$	&	$\bm{0.32}$	\\
+		数据集2	&	0.975	&	0.53	&	0.983	&	0.56	&	$\bm{1.000}$	&	$\bm{0.32}$	\\
+		\hline\hline
+		平均值	& 0.989	& 0.31	& 0.988	& 0.29	& $\bm{1.000}$	& $\bm{0.17}$ \\
+		\hline
+	\end{tabular}
+\end{table*}
+
+\section{公式}
+
+需要等号对齐的公式写法。
+
+\begin{equation}
+\begin{split}
+\nabla_{\theta}J(\pi_{\theta})
+& = \int_{\mathcal{S}}\rho^{\pi}(s)\int_{\mathcal{A}} \nabla_{\theta}\pi_{\theta}(a|s)Q^{\pi}(s,a)dads \\
+& = \mathbb{E}_{s\sim\rho^{\pi},a\sim\pi_{\theta}}[\nabla
+_{\theta}\log\pi_{\theta}(a|s)Q^{\pi}(s,a)]
+\end{split}
+\end{equation}
+
+\section{算法}
+
+算法如算法\ref{algorithm:alg_1}所示。
+
+\begin{algorithm}[htbp]
+	\caption{算法}
+	\label{algorithm:alg_1}
+	\begin{algorithmic}[1]
+		\Require 输入数据
+		\Ensure 输出结果
+		\State 步骤
+		\For {时间步t = $0, \dots, T$}
+		\State 循环
+		\If {判断条件}
+		\State 步骤
+		\EndIf
+		\State 步骤
+		\EndFor
+	\end{algorithmic}
+\end{algorithm}

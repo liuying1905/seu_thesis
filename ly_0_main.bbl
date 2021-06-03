@@ -1,0 +1,35 @@
+\begin{thebibliography}{5}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Mnih et al.(2013)]{Mnih2013PlayingAW}
+Mnih V, Kavukcuoglu K, Silver D, et al.
+\newblock Playing Atari with Deep Reinforcement Learning[J].
+\newblock ArXiv, 2013, abs/1312.5602.
+
+\bibitem[Ye et al.(2020)]{Ye2020MasteringCC}
+Ye D, Liu Z, Sun M, et al.
+\newblock Mastering Complex Control in MOBA Games with Deep Reinforcement
+  Learning[J].
+\newblock AAAI, 2020, 6672–6679.
+
+\bibitem[Silver et al.(2016)]{Silver2016MasteringTG}
+Silver D, Huang A, Maddison C~J, et al.
+\newblock Mastering the game of Go with deep neural networks and tree
+  search[J].
+\newblock Nature, 2016, 529:484--489.
+
+\bibitem[Li(2017)]{Li2017DeepRL}
+Li Y.
+\newblock Deep Reinforcement Learning: An Overview[J].
+\newblock ArXiv, 2017, abs/1701.07274.
+
+\bibitem[Karimpanal and Bouffanais(2018)]{Karimpanal2018ExperienceRU}
+Karimpanal T~G, Bouffanais R.
+\newblock Experience Replay Using Transition Sequences[J].
+\newblock Frontiers in Neurorobotics, 2018, 12.
+
+\end{thebibliography}
